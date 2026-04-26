@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy — Hawk Translate</title>
+<meta name="description" content="The Hawk Translate privacy policy: what we do, what we don't, and exactly where your data goes." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,500&family=JetBrains+Mono:wght@400;500&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink: #0c1420;
+    --ink-2: #131e2e;
+    --ink-3: #1a2638;
+    --paper: #f5f1e8;
+    --amber: #d97706;
+    --amber-bright: #f59e0b;
+    --amber-glow: #fbbf24;
+    --rust: #c2410c;
+    --sage: #84a98c;
+    --line: rgba(245, 241, 232, 0.12);
+    --line-strong: rgba(245, 241, 232, 0.25);
+    --muted: #94a3b8;
+    --display: 'Fraunces', Georgia, serif;
+    --body: 'Inter Tight', -apple-system, sans-serif;
+    --mono: 'JetBrains Mono', monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--ink);
+    color: var(--paper);
+    font-family: var(--body);
+    font-size: 16px;
+    line-height: 1.7;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.04;
+    z-index: 1;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  ::selection { background: var(--amber-bright); color: var(--ink); }
+  a { color: var(--amber-glow); text-decoration: none; border-bottom: 1px solid rgba(251, 191, 36, 0.3); transition: border-color 0.2s; }
+  a:hover { border-color: var(--amber-glow); }
+
+  /* Topbar */
+  .topbar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 18px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(12, 20, 32, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--line);
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: -0.01em;
+    color: var(--paper);
+    border: none;
+  }
+  .brand-mark {
+    width: 32px; height: 32px;
+    display: grid;
+    place-items: center;
+    background: var(--amber-bright);
+    color: var(--ink);
+    border-radius: 8px;
+    font-size: 18px;
+  }
+  .nav { display: flex; gap: 28px; font-size: 14px; }
+  .nav a {
+    color: var(--paper);
+    opacity: 0.75;
+    border: none;
+    transition: opacity 0.2s;
+  }
+  .nav a:hover { opacity: 1; }
+  @media (max-width: 720px) {
+    .topbar { padding: 14px 20px; }
+    .nav { gap: 16px; }
+  }
+
+  /* Hero */
+  .privacy-hero {
+    padding: 160px 40px 80px;
+    position: relative;
+    overflow: hidden;
+  }
+  .privacy-hero::before {
+    content: '';
+    position: absolute;
+    top: -200px; right: -100px;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(132, 169, 140, 0.18) 0%, transparent 65%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  .privacy-hero-inner {
+    max-width: 880px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+  .eyebrow {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--amber-glow);
+    margin-bottom: 22px;
+    padding: 7px 14px;
+    border: 1px solid var(--line-strong);
+    border-radius: 999px;
+    background: rgba(251, 191, 36, 0.05);
+  }
+  h1 {
+    font-family: var(--display);
+    font-weight: 300;
+    font-size: clamp(44px, 6.5vw, 84px);
+    line-height: 0.98;
+    letter-spacing: -0.03em;
+    margin-bottom: 24px;
+  }
+  h1 em {
+    font-style: italic;
+    font-weight: 500;
+    color: var(--amber-glow);
+  }
+  .lede {
+    font-size: 19px;
+    line-height: 1.55;
+    color: rgba(245, 241, 232, 0.78);
+    max-width: 620px;
+  }
+  .last-updated {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+  }
+  @media (max-width: 720px) { .privacy-hero { padding: 120px 20px 60px; } }
+
+  /* TL;DR card */
+  .tldr {
+    max-width: 880px;
+    margin: 0 auto 60px;
+    padding: 0 40px;
+    position: relative;
+    z-index: 2;
+  }
+  @media (max-width: 720px) { .tldr { padding: 0 20px; } }
+  .tldr-card {
+    background: linear-gradient(155deg, var(--ink-2), var(--ink-3));
+    border: 1px solid var(--line-strong);
+    border-radius: 18px;
+    padding: 36px;
+    border-left: 4px solid var(--amber-bright);
+  }
+  .tldr-label {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--amber-glow);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    margin-bottom: 14px;
+  }
+  .tldr-card h2 {
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin-bottom: 16px;
+  }
+  .tldr-card p {
+    font-size: 16px;
+    color: rgba(245, 241, 232, 0.82);
+  }
+
+  /* Body content */
+  .policy-body {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 0 40px 100px;
+    position: relative;
+    z-index: 2;
+  }
+  @media (max-width: 720px) { .policy-body { padding: 0 20px 70px; } }
+
+  .policy-body h2 {
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: clamp(28px, 4vw, 40px);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin: 70px 0 22px;
+    color: var(--paper);
+    position: relative;
+    padding-left: 24px;
+  }
+  .policy-body h2::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0.45em;
+    width: 8px;
+    height: 0.6em;
+    background: var(--amber-bright);
+    border-radius: 2px;
+  }
+  .policy-body h2:first-child { margin-top: 0; }
+
+  .policy-body h3 {
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: 22px;
+    margin: 36px 0 14px;
+    letter-spacing: -0.01em;
+    color: var(--paper);
+  }
+
+  .policy-body p {
+    font-size: 16.5px;
+    line-height: 1.75;
+    color: rgba(245, 241, 232, 0.82);
+    margin-bottom: 18px;
+  }
+  .policy-body strong {
+    color: var(--paper);
+    font-weight: 600;
+  }
+  .policy-body ul, .policy-body ol {
+    margin: 8px 0 22px 0;
+    padding-left: 0;
+    list-style: none;
+  }
+  .policy-body li {
+    font-size: 16.5px;
+    line-height: 1.7;
+    color: rgba(245, 241, 232, 0.82);
+    margin-bottom: 12px;
+    padding-left: 28px;
+    position: relative;
+  }
+  .policy-body li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--amber-glow);
+    font-weight: 600;
+  }
+  .policy-body code {
+    font-family: var(--mono);
+    background: rgba(251, 191, 36, 0.1);
+    color: var(--amber-glow);
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+
+  /* Provider table */
+  .providers-table {
+    margin: 24px 0 30px;
+    border: 1px solid var(--line-strong);
+    border-radius: 14px;
+    overflow: hidden;
+    background: var(--ink-2);
+  }
+  .provider-row {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 0;
+    border-bottom: 1px solid var(--line);
+    padding: 18px 22px;
+    transition: background 0.2s;
+  }
+  .provider-row:last-child { border-bottom: none; }
+  .provider-row:hover { background: var(--ink-3); }
+  .provider-name {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--amber-glow);
+  }
+  .provider-policy {
+    font-size: 14.5px;
+    color: rgba(245, 241, 232, 0.75);
+    line-height: 1.55;
+  }
+  .provider-policy a {
+    color: var(--paper);
+    border-bottom: 1px solid var(--line-strong);
+  }
+  .provider-policy a:hover { border-color: var(--amber-glow); color: var(--amber-glow); }
+  @media (max-width: 600px) {
+    .provider-row { grid-template-columns: 1fr; gap: 6px; }
+  }
+
+  /* Contact card */
+  .contact-card {
+    background: linear-gradient(155deg, var(--ink-2), var(--ink-3));
+    border: 1px solid var(--line-strong);
+    border-radius: 18px;
+    padding: 32px 36px;
+    margin-top: 30px;
+  }
+  .contact-card h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  .contact-card p { margin-bottom: 12px; }
+  .contact-card p:last-child { margin-bottom: 0; }
+
+  /* Footer */
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 40px;
+    position: relative;
+    z-index: 2;
+  }
+  .footer-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+  }
+  .footer-grid a {
+    color: var(--muted);
+    border: none;
+  }
+  .footer-grid a:hover { color: var(--amber-glow); }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <a href="index.html" class="brand">
+    <span class="brand-mark">⌖</span>
+    <span>Hawk Translate</span>
+  </a>
+  <nav class="nav">
+    <a href="index.html#features">Features</a>
+    <a href="index.html#backends">Backends</a>
+    <a href="index.html">← Back to home</a>
+  </nav>
+</header>
+
+<section class="privacy-hero">
+  <div class="privacy-hero-inner">
+    <div class="eyebrow">Privacy Policy</div>
+    <h1>What we do.<br>What we <em>don't</em>.</h1>
+    <p class="lede">
+      The short version: Hawk Translate doesn't collect, sell, or transmit
+      your data to us. Below is the long version — written in plain language,
+      not legalese.
+    </p>
+    <div class="last-updated">Last updated: April 2026 · Effective immediately</div>
+  </div>
+</section>
+
+<section class="tldr">
+  <div class="tldr-card">
+    <div class="tldr-label">— TL;DR</div>
+    <h2>Hawk Translate has no servers, no analytics, and no developer-side data collection.</h2>
+    <p>
+      Your selected text is sent only to the translation provider you chose
+      (Google, MyMemory, DeepL, Microsoft Azure, or LibreTranslate). Any API
+      keys you enter are stored locally in your own browser and never leave
+      it except to talk to that specific provider. We — the developers — do
+      not see, collect, or store anything you do.
+    </p>
+  </div>
+</section>
+
+<main class="policy-body">
+
+  <h2>1. Who we are</h2>
+  <p>
+    Hawk Translate is an independent, open-source browser extension for
+    Firefox, Chrome, and Edge, licensed under the MIT License. It is
+    developed and maintained by an independent developer and is not
+    affiliated with, endorsed by, or sponsored by Google, Microsoft, DeepL,
+    MyMemory, or any other translation provider.
+  </p>
+  <p>
+    This privacy policy explains what data the extension handles, where it
+    goes, and what your rights are. It applies to all versions of Hawk
+    Translate distributed through official browser add-on stores.
+  </p>
+
+  <h2>2. What data the extension processes</h2>
+  <p>
+    Hawk Translate processes the following data <strong>only on your device</strong>
+    and only to perform the action you asked for:
+  </p>
+  <ul>
+    <li><strong>Selected text and typed text.</strong> When you highlight text or type into the popup, the text is sent to the translation provider you chose so it can return a translation. It is not stored by the extension.</li>
+    <li><strong>Source and target languages.</strong> The language pair you choose is sent with the translation request.</li>
+    <li><strong>Your settings.</strong> Theme, bubble style, auto-close timing, default backend, and similar preferences are stored locally in your browser using the standard browser extension storage APIs.</li>
+    <li><strong>API keys you enter.</strong> If you choose to use DeepL, Microsoft Azure Translator, or a self-hosted LibreTranslate endpoint, the API key or URL you enter is stored locally in your browser.</li>
+  </ul>
+
+  <h2>3. What we — the developer — do not do</h2>
+  <p>
+    We want to be specific, because too many "privacy policies" hide behind
+    vague phrasing. Hawk Translate <strong>does not</strong>:
+  </p>
+  <ul>
+    <li>Operate any server that receives data from the extension.</li>
+    <li>Send analytics, telemetry, crash reports, or usage statistics to the developer or any third party.</li>
+    <li>Track your browsing history, the websites you visit, or your activity on those websites.</li>
+    <li>Build a profile of you, your interests, or your reading habits.</li>
+    <li>Sell, rent, share, or otherwise transfer your data to anyone.</li>
+    <li>Use cookies, fingerprinting, or any other identification mechanism on your device beyond the browser's standard extension storage for your settings.</li>
+    <li>Read or transmit page content automatically. The extension only acts on text you explicitly select or type.</li>
+  </ul>
+
+  <h2>4. Where your translated text goes</h2>
+  <p>
+    When you ask for a translation, your selected or typed text is sent
+    <strong>directly from your browser to the translation provider you chose</strong>
+    in Options. We do not see, log, or proxy this request. Each provider has
+    its own privacy policy, terms of service, and data-handling practices,
+    which apply to that request:
+  </p>
+
+  <div class="providers-table">
+    <div class="provider-row">
+      <div class="provider-name">Google</div>
+      <div class="provider-policy">
+        Used by default. Subject to Google's privacy policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>
+      </div>
+    </div>
+    <div class="provider-row">
+      <div class="provider-name">MyMemory</div>
+      <div class="provider-policy">
+        Free public translation memory. Subject to MyMemory's privacy notice: <a href="https://mymemory.translated.net/doc/privacy.php" target="_blank" rel="noopener">mymemory.translated.net/doc/privacy.php</a>
+      </div>
+    </div>
+    <div class="provider-row">
+      <div class="provider-name">DeepL</div>
+      <div class="provider-policy">
+        Used only if you provide your own DeepL API key. Subject to DeepL's privacy policy: <a href="https://www.deepl.com/en/privacy" target="_blank" rel="noopener">deepl.com/privacy</a>
+      </div>
+    </div>
+    <div class="provider-row">
+      <div class="provider-name">Microsoft Azure Translator</div>
+      <div class="provider-policy">
+        Used only if you provide your own Azure key. Subject to Microsoft's privacy statement: <a href="https://privacy.microsoft.com/privacystatement" target="_blank" rel="noopener">privacy.microsoft.com/privacystatement</a>
+      </div>
+    </div>
+    <div class="provider-row">
+      <div class="provider-name">LibreTranslate</div>
+      <div class="provider-policy">
+        Open-source. Used only if you configure your own endpoint URL — privacy depends entirely on the instance you choose to use.
+      </div>
+    </div>
+  </div>
+
+  <p>
+    The extension does <strong>not</strong> add any identifying information
+    to these requests beyond what the provider requires (for example, your
+    API key for DeepL or Azure). If you change providers, requests stop going
+    to the previous one.
+  </p>
+
+  <h2>5. Pronunciation and natural-voice playback</h2>
+  <p>
+    The 🔊 speaker feature uses your browser's built-in speech-synthesis
+    capabilities (the standard Web Speech API). Depending on your operating
+    system and browser, voice generation may happen entirely on your device
+    or may rely on a system-level cloud voice service — that behavior is
+    controlled by your browser/OS, not by Hawk Translate.
+  </p>
+
+  <h2>6. Where data is stored on your device</h2>
+  <p>
+    All settings and any API keys you enter are stored using your browser's
+    extension storage — typically <code>browser.storage.local</code> or
+    <code>chrome.storage.local</code>. This data:
+  </p>
+  <ul>
+    <li>Stays on your device.</li>
+    <li>Is removed if you uninstall the extension.</li>
+    <li>Can be cleared at any time from the extension's Options page.</li>
+    <li>Is never synced to the developer.</li>
+  </ul>
+  <p>
+    If you have browser-level extension sync enabled (for example, Firefox
+    Sync or Chrome Sync), some settings may be synced between your own
+    devices through your browser vendor's account — that sync is handled by
+    the browser, not by Hawk Translate, and is subject to the privacy policy
+    of your browser vendor.
+  </p>
+
+  <h2>7. Permissions the extension requests, and why</h2>
+  <p>
+    Hawk Translate requests only the permissions it needs to do its job:
+  </p>
+  <ul>
+    <li><strong>Active tab / host permissions.</strong> So the extension can read your selected text on the page you're currently viewing and show the translation bubble next to it.</li>
+    <li><strong>Storage.</strong> So your settings and any API keys are remembered between sessions.</li>
+    <li><strong>Context menu.</strong> So the right-click "Translate" entry can appear.</li>
+    <li><strong>Network requests to translation providers.</strong> So translations can be fetched from the backend you chose.</li>
+  </ul>
+  <p>
+    The extension does not request permissions that would let it read your
+    history, downloads, bookmarks, or other browser data.
+  </p>
+
+  <h2>8. Children's privacy</h2>
+  <p>
+    Hawk Translate does not knowingly collect data from anyone, including
+    children. Because the extension does not have an account system and does
+    not transmit data to the developer, there is no developer-side profile
+    of any user, regardless of age. Use of third-party translation providers
+    is subject to those providers' own age and consent terms.
+  </p>
+
+  <h2>9. International users</h2>
+  <p>
+    Because Hawk Translate has no server, no developer-side data collection,
+    and no cross-border transfer of data initiated by the developer, GDPR,
+    UK GDPR, CCPA/CPRA, and similar regulations have very limited
+    applicability to the extension itself. When you use a third-party
+    translation backend, that provider becomes the data processor for the
+    text you submit, and their own jurisdiction and policies apply.
+  </p>
+
+  <h2>10. Open source &amp; verifiability</h2>
+  <p>
+    Hawk Translate is licensed under the MIT License. You — or anyone — can
+    inspect the source code to verify exactly what the extension does and
+    does not do with your data. We strongly encourage independent review:
+    that is the strongest privacy guarantee any extension can offer.
+  </p>
+
+  <h2>11. Changes to this policy</h2>
+  <p>
+    If this policy changes, the updated version will be published at this
+    URL with a new "Last updated" date. Material changes — for example,
+    adding a new translation backend or any change to what the extension
+    transmits — will be highlighted in the extension's release notes on the
+    Firefox, Chrome, and Edge add-on stores.
+  </p>
+
+  <h2>12. Contact</h2>
+  <div class="contact-card">
+    <h3>Questions, concerns, or bug reports?</h3>
+    <p>
+      For privacy questions or to report an issue, please open an issue on
+      the project's GitHub repository, or reach out via the contact link on
+      the extension's listing page in your browser's add-on store.
+    </p>
+    <p>
+      Because there is no account system, we cannot identify "your data" on
+      our side — there is none — but we are always happy to clarify how the
+      extension works.
+    </p>
+  </div>
+
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <span>© 2026 Hawk Translate · MIT License</span>
+    <div>
+      <a href="index.html">← Back to homepage</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
