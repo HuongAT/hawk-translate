@@ -16,7 +16,7 @@
       <h1>Hawk Translate</h1>
       <nav>
         <a href="index.html">Home</a>
-        <a href="https://huongat.github.io/hawk-translate" rel="noopener">GitHub</a>
+        <a href="https://github.com/huongat/hawk-translate" rel="noopener">GitHub</a>
       </nav>
     </header>
 
@@ -36,13 +36,15 @@
       </ul>
 
       <h2>What is stored locally</h2>
-      <p>The extension stores your settings on your device using the browser's extension storage (<code>chrome.storage.local</code> / <code>browser.storage.local</code>). This data never leaves your device and is not synced to any cloud:</p>
+      <p>The extension stores your settings and your translation data on your device, using the browser's extension storage (<code>chrome.storage.local</code> / <code>browser.storage.local</code>) and the browser's local database (IndexedDB). This data never leaves your device and is not synced to any cloud:</p>
       <ul>
         <li>Your selected translation provider and target language</li>
         <li>Bubble appearance preferences (mode, style, auto-close timing, theme)</li>
         <li>API keys and endpoints that you enter for DeepL, Azure Translator, MyMemory, or LibreTranslate</li>
+        <li>Your translation history (the original text, its translation, the language pair, the site it came from, and when you translated it) &mdash; only if history is enabled, with retention and size limits you control in the options. You can search, export, or delete it there at any time, or turn history off entirely.</li>
+        <li>Your saved words and flash-card review progress &mdash; words stay until you remove them or clear the list in the options</li>
       </ul>
-      <p>Uninstalling the extension removes this storage.</p>
+      <p>Uninstalling the extension removes all of this storage.</p>
 
       <h2>What is sent over the network, and to whom</h2>
       <p>When you trigger a translation, the extension makes a request directly from your browser to the translation provider you selected in the options. The text you are translating is included in that request. No other party — including the developer of Hawk Translate — receives a copy.</p>
