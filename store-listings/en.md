@@ -1,6 +1,7 @@
-Hawk Translate is a fast, distraction-free translation and language-learning companion. Select any text on any website to get an instant translation, natural-voice pronunciation, and — for single words — grammar and synonyms to grow your vocabulary. Save the words you want to keep and learn them with built-in flash cards.
+Hawk Translate is a fast, distraction-free translation and language-learning companion. Select any text on any website to get an instant translation, natural-voice pronunciation, and — for single words — grammar and synonyms to grow your vocabulary. Watch YouTube with two subtitle languages at once. Save the words you want to keep and learn them with built-in flash cards.
 
 What you can do
+Watch YouTube with bilingual subtitles. A new button in the YouTube player shows two subtitle lines at once — the video's language on top, yours below. Both lines come from YouTube's own captions (including YouTube's auto-translations), stay in sync line for line, and can be resized on the spot. Your language pair is remembered and applies automatically on the next video. Pause and select any subtitle word to translate or ☆-save it — subtitles become study material.
 Select and translate. Highlight text; a compact bubble shows the translation right next to your selection.
 Listen. Click the speaker 🔊 to hear the original or the translation in a natural voice. Click the same text twice for a slower replay — great for pronunciation practice.
 Learn vocabulary. Select a single word and Hawk shows its part of speech (noun / verb / adjective …) and synonyms, so you see the whole word family at a glance.
@@ -22,6 +23,7 @@ LibreTranslate — open source; point it at your own endpoint
 If the chosen backend fails, a built-in "Try with …" chooser retries instantly with another provider — no detour through the settings.
 
 Built for language learners
+Bilingual YouTube subtitles turn any captioned video into listening practice: hear the original, read both languages, and save the words you don't know without leaving the player.
 A speaker on both the original and the translation lets you hear the source language while you read the meaning.
 The word-families panel shows nuance: seeing synonyms grouped by part of speech builds vocabulary faster than a bare translation.
 Flash-card review turns the words you actually encountered while browsing into long-term vocabulary — no separate app, no account.
@@ -38,7 +40,7 @@ Supported languages
 50+ translation languages, including English, Spanish, French, German, Italian, Portuguese, Russian, Japanese, Korean, Chinese (Simplified & Traditional), Arabic, Hindi, Vietnamese, Thai, Turkish, Indonesian, Ukrainian, Polish, Dutch, and more. Extension metadata localized in 20 languages.
 
 Privacy
-Hawk Translate does not collect or transmit any personal data to the developer. The text you translate is sent only to the provider you choose (Google, MyMemory, DeepL, Azure, or LibreTranslate). Your translation history, saved words, and flash-card progress are stored only on your device — never uploaded, never synced, and removed if you uninstall. API keys you enter for DeepL, Azure, or LibreTranslate are stored locally in your browser and never sent anywhere except that provider's own servers for requests you trigger.
+Hawk Translate does not collect or transmit any personal data to the developer. The text you translate is sent only to the provider you choose (Google, MyMemory, DeepL, Azure, or LibreTranslate). Bilingual subtitles involve no translation provider at all: both lines come from the captions YouTube already serves for the video you're watching, and that data never leaves your browser. Your translation history, saved words, and flash-card progress are stored only on your device — never uploaded, never synced, and removed if you uninstall. API keys you enter for DeepL, Azure, or LibreTranslate are stored locally in your browser and never sent anywhere except that provider's own servers for requests you trigger.
 
 Open source
 MIT licensed.
