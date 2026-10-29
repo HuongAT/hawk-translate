@@ -23,7 +23,7 @@
 
     <article class="page">
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: April 25, 2026</p>
+      <p class="updated">Last updated: October 29, 2026</p>
 
       <p>Hawk Translate is a browser extension that translates text you select on web pages. This page explains what data the extension touches, what it doesn't, and how the translation providers fit in.</p>
 
@@ -44,6 +44,8 @@
         <li>API keys and endpoints that you enter for DeepL, Azure Translator, MyMemory, or LibreTranslate</li>
         <li>Your translation history (the original text, its translation, the language pair, the site it came from, and when you translated it) &mdash; only if history is enabled, with retention and size limits you control in the options. You can search, export, or delete it there at any time, or turn history off entirely.</li>
         <li>Your saved words and flash-card review progress &mdash; words stay until you remove them or clear the list in the options</li>
+        <li>Your bilingual subtitle language pair, and machine-translated subtitle lines cached per title so re-watching never re-translates</li>
+        <li>Your dictation practice level and text size (your typed answers and scores are not saved)</li>
       </ul>
       <p>Uninstalling the extension removes all of this storage.</p>
 
@@ -86,6 +88,18 @@
           </tr>
         </tbody>
       </table>
+
+      <h2>Bilingual subtitles</h2>
+      <p>Bilingual subtitles on YouTube, Netflix, and Prime Video read the captions the video&rsquo;s own player already serves for the video you are watching. What happens next depends on where the second line comes from:</p>
+      <ul>
+        <li><strong>The video&rsquo;s own subtitle tracks</strong> (including YouTube&rsquo;s auto-translations) &mdash; no translation provider is involved, and the subtitle text never leaves your browser.</li>
+        <li><strong>Machine translation on Netflix or Prime Video</strong> &mdash; only if you choose it, the subtitle text is sent to the translation provider you selected, like any other translation. The result is cached only on your device.</li>
+        <li><strong>YouTube auto-translation refused</strong> &mdash; if YouTube declines to serve its auto-translation, the second line is translated by the provider you selected instead: that video&rsquo;s subtitle text is sent to that provider, and the result is cached only on your device.</li>
+        <li><strong>Your own subtitle file</strong> &mdash; a file you load is read locally and is not uploaded anywhere.</li>
+      </ul>
+
+      <h2>Dictation practice</h2>
+      <p>Dictation practice on YouTube and Prime Video runs entirely in your browser. It replays lines from the video you are already watching, and the words you type are checked on your device. Your answers and scores are never sent anywhere and are not saved; only your chosen level and text size are kept, in local extension storage. Dictation makes no network requests of its own.</p>
 
       <h2>Text-to-speech</h2>
       <p>Pressing the speaker button uses one of two paths:</p>
